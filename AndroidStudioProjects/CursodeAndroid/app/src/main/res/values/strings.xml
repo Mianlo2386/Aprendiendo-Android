@@ -27,7 +27,7 @@
     <string name="description_obesidad">Tu peso esta MUY por encima de lo óptimo para tu edad y altura.</string>
 
     <!--TodoApp-->
-    <string name="todo_title">Bienvenido, Miguel</string>
+    <string name="todo_title">Bienvenido Miguel</string>
     <string name="todo_categories">Categorías:</string>
     <string name="todo_tasks">Tareas:</string>
 
