@@ -37,7 +37,9 @@ const App = () => {
       <h1>Greetings</h1>
         <Hello name="Maya" age={26 + 10} />
         <Hello name={name} age={age} />
-        <h1>Contador</h1>  
+        <h1>Contador</h1> 
+        <h1>Contador de prueba</h1> 
+         
         <Counter/>
       
     </>
