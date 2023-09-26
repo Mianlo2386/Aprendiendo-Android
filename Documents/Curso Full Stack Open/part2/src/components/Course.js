@@ -1,15 +1,25 @@
-const Course = ({course}) => {
-    return (
-     <>
-          <h1>{course.name}</h1>
-         <p>
-          {course.parts[0].name} {course.parts[0].exercises} <br/> <br/>
-          {course.parts[1].name} {course.parts[1].exercises} <br/> <br/>
-          {course.parts[2].name} {course.parts[2].exercises} <br/> <br/>
-          {course.parts[3].name} {course.parts[3].exercises}
-         </p>
-     </>
-         
-    );
-  }
-  export default Course
+import React from "react";
+
+const Course = ({ course }) => {
+  const totalExercises = course.parts.reduce(
+    (total, part) => total + part.exercises,
+    0
+  );
+
+  return (
+    <div>
+      <h1>{course.name}</h1>
+      {course.parts.map((part) => (
+        <p key={part.id}>
+          {part.name} {part.exercises}
+        </p>
+      ))}
+      <p>
+        <strong>Total of exercises: {totalExercises}</strong>
+      </p>
+    </div>
+  );
+};
+
+export default Course;
+
